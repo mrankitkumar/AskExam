@@ -26,6 +26,9 @@
     "pdfjs-dist": "^3.5.141",
     "request": "^2.88.2",
     "sweetalert": "^2.1.2",
-    "sweetalert2": "^11.7.3"
+    "sweetalert2": "^11.7.3",
+    "netlify-lamda":"^2.0.16",
+    "serverless-http":"^3.2.0",
+    
   }
 }
