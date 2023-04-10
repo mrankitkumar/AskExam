@@ -31,6 +31,14 @@ let uri="mongodb+srv://ankitkumar15032003:ankit12345678@cluster0.0kzpahg.mongodb
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB Atlas'))
   .catch((err) => console.log('Error connecting to MongoDB Atlas:', err));
+const mongoose = require('mongoose');
+
+const uri = 'mongodb+srv://ankitkumar15032003:ankit12345678@@cluster0.0kzpahg.mongodb.net/test?retryWrites=true&w=majority&authSource=admin&tls=true&tlsAllowInvalidCertificates=true&tlsCAFile=./testca.pem&readPreference=primary&appname=Mongoose&directConnection=true&serverSelectionTimeoutMS=5000&connectTimeoutMS=5000&heartbeatFrequencyMS=10000&retryWrites=true&maxStalenessSeconds=120&compressors=snappy,zlib&gssapiServiceName=mongodb&authMechanism=MONGODB-X509&gssapiHostName=49.249.101.106';
+
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connected to MongoDB Atlas'))
+  .catch((err) => console.log('Error connecting to MongoDB Atlas:', err));
+
 const passportLocalMongoose = require('passport-local-mongoose');
 mongoose.connect(uri, { useNewUrlParser: true });
 mongoose.set('strictQuery', true);
