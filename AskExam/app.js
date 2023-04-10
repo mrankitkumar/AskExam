@@ -455,7 +455,7 @@ app.post("/adminlogin", (req,res)=>{
     }
 });
 
-app.listen(3000,'askexam.onrender.com', ()=> {
+app.listen(3000,'https://askexam.onrender.com/', ()=> {
     console.log("Server is running at 3000 port");
 });
 
