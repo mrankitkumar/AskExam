@@ -6,7 +6,7 @@ const Swal = require('sweetalert');
 //multer for uploding files
 const multer = require("multer");
 //view pdf
-const pdfjsLib = require('pdfjs-dist');
+//const pdfjsLib = require('pdfjs-dist');
 const path = require('path');
 const fs = require('fs');
 const Storage = multer.diskStorage({
