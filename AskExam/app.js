@@ -28,6 +28,9 @@ const connectEnsureLogin = require('connect-ensure-login');
 //import 
 const mongoose = require('mongoose');
 let uri="mongodb+srv://ankitkumar15032003:ankit12345678@cluster0.0kzpahg.mongodb.net/?retryWrites=true&w=majority"
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connected to MongoDB Atlas'))
+  .catch((err) => console.log('Error connecting to MongoDB Atlas:', err));
 const passportLocalMongoose = require('passport-local-mongoose');
 mongoose.connect(uri, { useNewUrlParser: true });
 mongoose.set('strictQuery', true);
