@@ -28,7 +28,7 @@ const connectEnsureLogin = require('connect-ensure-login');
 //import 
 const mongoose = require('mongoose');
 
-const uri ="mongodb+srv://ankitkumar15032003:<password>@cluster0.0kzpahg.mongodb.net/?retryWrites=true&w=majority";
+const uri ="mongodb+srv://ankitkumar15032003:ankit12345678@cluster0.0kzpahg.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB Atlas'))
