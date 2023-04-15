@@ -50,7 +50,7 @@ app.use(bodyparser.urlencoded({ extended: true }));
 
 //use all import  use 
 app.use(session({
-    secret: "Ankit animesh Tuhin",
+    secret: "Ankit Kumar",
     resave: false,
     saveUninitialized: true,
     cookie: { max: 60 * 60 * 60 }
